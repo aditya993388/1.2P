@@ -9,27 +9,27 @@
 
 <body>
 
-
-
-    <p>Call a function which performs a calculation and returns the result:</p>
+    <p>Call functions which perform calculations and return results:</p>
 
     <p id="add"></p>
+    <p id="multiply"></p>
 
     <script>
+        function myFunction(r, s) {
+            return r + s;
+        }
 
-
-
-        function myFunction(r, s) { return r + s; }
+        function my2ndFunction(e, f) {
+            return e * f;
+        }
 
         let q = myFunction(1, 8);
-        document.getElementById("add").innerHTML = q
-    
+        let v = my2ndFunction(9, 6);
 
-     
-       
-       
+        document.getElementById("add").innerHTML = q;
+        document.getElementById("multiply").innerHTML = v;
+    </script>
 
-</script>       
 </body>
 
 </html>
